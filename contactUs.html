@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content=" ">
+	<meta name="Keywords" Content="Space, Space technology, Space tourism, Space exploration, How to go to space, Astronaut" />
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="spaceX.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    <title> SpaceX </title>
+    
+</head>
+<body>
+	<div id= "bodyWrapper" >
+		<div id= "logo"  > <a href="index.html"> <img src= "images/spaceXLogo2.png" >  </a>
+			<div class = "menuToggle" > Menu <i class="fa fa-bars" ></i> 
+				<div id = " menu" >		
+					<nav> 
+						<ul class=" menuToggle" style= "display: none;">
+							<li><a href="index.html"> HOME </a></li>
+							<li><a href="aboutUs.html"> ABOUT US </a></li>
+							<li><a href="news.html"> NEWS </a></li>
+							<li><a href="contactUs.html"> CONTACT US </a></li>			
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>	
+			<div id ="menu">				
+				<nav> 
+					<ul class='currentPage' >
+						<liclass='currentPage'  ><a href="index.html"> HOME </a></li>
+						<li class='currentPage' ><a href="aboutUs.html"> ABOUT US </a></li>
+						<li class='currentPage' ><a href="news.html"> NEWS </a></li>
+						<li class='currentPage current'  ><a href="contactUs.html"> CONTACT US </a></li>			
+					</ul>
+				</nav>
+			</div>
+			
+		<h1> Space Technology Designed To Take You On Space Tour </h1>
+	
+
+		<form>	
+			<fieldset> 
+				<legend > Leave a message for us </legend>
+				
+				<div id = "formError" > </div> <br />
+				
+				<label > Names </label> <br />
+				<input class= "input" type ="text" placeholder ="Your first names" name ="First name" pattern = "^[a-z A-Z]+$"  />
+				<div id = "error" > </div> <br />
+				<input class= "input" type ="text" placeholder ="Your last names" name ="Last name"pattern = "^[a-z A-Z]+$"  />
+				<div id = "error" > </div> <br />
+				
+				<label> Address </label> <br />
+				<input class= " input" type= "text" placeholder =" Your address"pattern = "^[a-z A-Z 0-9]+$" /> <br />
+				<div id = "error" > </div> <br />
+				
+				<label> E-mail </label> <br />
+				<input class= "input" type ="text" placeholder ="Your email address" name ="email" pattern="^[a-z A-Z 0-9._]+@[a-z A-Z 0-9-]+(?:\.[a-z A-Z0-9]+)+$"  />
+				<div id = "error" > </div> <br />
+	
+				<label> Telephone </label> <br />
+				<input class= "input" type ="text" placeholder ="Your phone" name ="Telephone" pattern= "^\(?:\ (? ( [0-9] {3} ) \) ?[-.] ?) ? ( [0-9] {3} ) [.-]? ( [0-9] {4} )+$"   />
+				<div id = "error" > </div> <br />
+			
+				<label for="inputtype"> Message / Comment </label> <br/>
+				<textarea name="comments" cols="30" rows="10" placeholder=" Enter your message/comment here.... "> </textarea>
+			
+				<button id ="submit"> Send </button>
+		
+			</fieldset>
+		</form>
+		
+	</div>
+
+	<footer>
+		Copyright <i class="fa fa-copyright" aria-hidden="true"></i> SpaceX
+	</footer>
+	
+<script src="spaceXProgram.js"></script>
+</body>
+</html>

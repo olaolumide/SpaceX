@@ -1,0 +1,388 @@
+body, html {
+	margin: 0;
+}
+body{
+	font-family: arial, sans-serif;
+	background-color: transparent;
+}
+#bodyWrapper {
+	background: transparent;
+	font-family: arial;
+	
+}
+#bodyWrapper #logo {
+	background-color: skyblue;
+	width: 30%;
+	text-align: center;
+	margin: auto;
+	border-top-left-radius: 30px 30px;
+	border-top-right-radius: 30px 30px;
+}
+#bodyWrapper h1 { font-size: 25px;
+	text-align: center;
+	font-family: arial;
+	margin: 40px 10px 40px 10px ;
+	
+}
+.menuToggle {
+	display: none;
+	float: right;
+	margin-right: 2px;
+	color: white;
+}
+#menu {
+	padding: 7px 7px 0 7px;
+	background-color:  skyblue;
+}
+#menu ul { 
+	text-align: center; 
+	font-size: 14px;
+}
+#menu ul li {
+	display: inline-block;
+	font-family: georgian;	
+	margin: 0 45px ;
+}
+
+#menu a{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+#menu li a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+#menu li a:active {
+	text-decoration: underline;
+	color: lightgreen;
+}
+.current { background-color: orange;
+	padding: 10px  10px 10px 10px;
+}
+/*#homeImages {
+	display: inline;
+	width: 100%;
+	margin: 30px 0 50px 0;	
+}*/
+#mainImage img{
+	width: 95% ;
+	text-align: center;
+	margin: 0px 10px;
+} 
+
+#homeImages img{ margin-left: 50px;}
+
+.subImages1 {
+	width: 90%;
+	float: righ;
+	background-color: black;	
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.subImages1 p{ 
+	margin: 20px; 
+	width: 400px; 
+	max-width: 80;	
+}
+.subImages2 {
+	width: 90%;
+	float: righ;
+	background-color: black;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.subImages2 p{ margin: 20px; width: 400px;}
+
+.subImages3 {
+	width: 90%;
+	float: righ;
+	background-color: black;	
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.subImages3 p{ margin: 20px; width: 380px;}
+
+.subImages1 img,  .subImages2 img, .subImages3 img {
+	max-width: 50%;
+}
+
+.subImages1 p, .subImages2 p, .subImages3 p{
+	float: right;
+	color: white;
+	margin: 10px;
+	max-width: 700px;	
+	overflow: hidden;
+	}
+.subImages2 h3{ 
+	float: right;
+	color: white;
+	margin: 10px;
+}
+/*#homeImages .subImages2 p{
+	float: right;
+	color: white;
+	margin: 20px;
+	width: 500px;
+}*/
+
+@media (max-width: 768px) { 
+#bodyWrapper #logo {
+	background-color: skyblue;
+	width: 100%;	
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#menu {
+	display: none;	
+}
+.menuToggle{
+	display: block;
+	text-align: right;
+	background-color: skyblue;
+	cursor: pointer ;
+	margin-right: 5px;
+	margin-top: 13px;
+}
+.menuToggle ul{
+	display: none;
+	text-align: center;
+	transition:  all 3s ease-in-out;
+}
+.menuToggle ul li{		
+	list-style: none;
+	margin: 15px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;	
+}
+.menuToggle li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	}
+.subImages1 p{ 
+	margin: 20px; 
+	width: 300px; 
+	max-width: 80;	
+	}
+	.subImages2 p{ 
+	margin: 20px; 
+	width: 300px; 
+	max-width: 80;	
+	}
+	.subImages3 p{ 
+	margin: 20px; 
+	width: 300px; 
+	max-width: 80;	
+	}
+#container{ 
+	width: 80%;
+	text-alig: center;
+	float: righ;
+	margin: auto ;
+	}
+}
+/*--- About us style ---*/
+#aboutUsPage{
+	width: 100%;
+	margin: 100px 0 100px 0;
+	background: transparent;
+	overflow: auto;
+}
+
+#aboutUs { 	
+	float: left;	
+	margin: 20px 60px 70px 60px;
+	display: inlin;
+	max-width: 800px;
+	background: lightgrey;	
+}
+#aboutUs h2 { text-align: center;}
+#aboutUs p{ margin: 15px;}
+
+#aboutUs2 { 
+	float: right;	
+	margin: 20px 60px 80px 60px;
+	display: inline;
+	max-width: 800px;
+	background: lightgrey;
+}
+#aboutUs2 h2 { text-align: center;}
+#aboutUs2 p{ margin: 15px;}
+
+/*--- Form validation ---- */
+fieldset{
+	width: 50%;
+	margin: auto;
+	background-color: skyblue;
+	margin-bottom: 100px;
+}
+legend{
+	text-align: center;
+	background-color: skyblue;
+	color: white;
+	margin-bottom: 20px;
+}
+label {	
+	color: white;
+	margin: 0px  30px 10px 60px
+}
+.input {
+	padding: 12px;
+	margin: 10px;
+}
+textarea { 
+	margin: 10px;
+}
+#submit {
+	background-color: grey;
+	padding: 10px 20px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 5px 10px 10px 40px;
+}
+#formError {
+	color: red;
+}
+#submit:hover {
+	background-color: green;
+}
+
+/* ---- News styling ---*/
+#news { text-align: center;
+	width: 100%;
+	margin: 20px 0 20px 20px;
+	float: right;
+	
+}
+#news #newsButton { 
+	background: lightgrey;
+	color: black;
+	padding: 15px;
+	margin: 15px;
+	cursor: pointer;
+	
+}
+#newsUpdate { width: 50%;
+	padding: 10p;
+	margin: auto;
+	background: lightgrey;
+}
+#container{ 
+	width: 60%;
+	text-align: center;
+	float: righ;
+	margin: auto ;
+}
+#container span{ font-size: 18px;
+	color: orange;
+}
+#container .breakingNews{
+	margin-top: 25px;
+	background-color: grey;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 10px;
+}
+.breakingNews a{ text-decoration: none;
+	color: black;
+}
+#container .breakingNews:hover{ background-color: lightyellow;}
+
+h2{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin: 180p 0 0 0;
+	letter-spacing: 8p;
+}
+h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 10px 0 20px 0;
+	font-style: italic
+}
+#conut{
+	margin: 50px 0;
+}
+
+#countDown{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border: 2.5px solid;
+	margin: 0 20px;
+	font-size: 7.5px;
+	font-weight: bold;
+	border-radius: 50%;
+	overflow: hidden;
+}
+#countDown span{
+	display: block;
+	font-size: 30px;
+	margin-top: 10px;
+}
+/*#newsUpdate img{
+	width: 200px;
+	height: 200px;
+}*/
+/* Footer */
+footer {
+	background-color: black;
+	padding: 15px;
+	margin-bottom: 2px;
+	margin-top: 20px;
+	color: white;
+	text-align: center;	
+}
+/* Cookies pop-up codes */
+#cookiesWrapper { width: 500px;
+	max-width: 80%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solide black;
+	border-radius: 10px;
+	z-index: 10;
+	background-color: white;
+	display: none;
+}
+.cookies{
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+.cookiesTitle{ margin:auto;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.cookies .closeButton{ font-size: 1.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+}
+.cookiesTerms{
+	padding: 10px 15px;
+}
+#overlay{
+	position: fixed;
+	opacity: ;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+}
